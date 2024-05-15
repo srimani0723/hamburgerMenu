@@ -1,0 +1,33 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 85vh;
+}
+
+.home-img-lg {
+  max-width: 700px;
+}
+
+.home-img-sm {
+  max-width: 300px;
+}
+
+@media (max-width: 576px) {
+  .home-img-lg {
+    display: none;
+  }
+  .home-img-sm {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  .home-img-lg {
+    display: block;
+  }
+  .home-img-sm {
+    display: none;
+  }
+}
